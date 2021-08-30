@@ -43,7 +43,7 @@ ga('send', 'pageview');
 
 <!-- Begin Menu Navigation
 ================================================== -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mediumnavigation nav-down">
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top mediumnavigation nav-down">
 
     <div class="container pr-0">
 
@@ -63,7 +63,7 @@ ga('send', 'pageview');
 
             <ul class="navbar-nav ml-auto">
 
-                {% if page.url == "/" %}
+                <!-- {% if page.url == "/" %}
                 <li class="nav-item active">
                 {% else %}
                 <li class="nav-item">
@@ -73,8 +73,7 @@ ga('send', 'pageview');
 
                 <li class="nav-item">
                 <a class="nav-link" href="{{ site.baseurl }}/about">About</a>
-                </li>
-
+                </li> -->
 
                 {% include search-lunr.html %}
             </ul>
