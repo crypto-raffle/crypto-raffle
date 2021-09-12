@@ -4,20 +4,30 @@ Copyright: Sal, WowThemes.net, https://www.wowthemes.net
 License: https://www.wowthemes.net/freebies-license/ 
 */
 @media screen and (min-width:1500px) {
-    html { font-size:18px; } /* Increase the font size on higher resolutions */
+    html { 
+		font-size: 18px; 
+		background-image: radial-gradient(circle, #262c87, #000338);
+	} /* Increase the font size on higher resolutions */
     .container {max-width:80%;}
 }
 .mainheading {
     padding: 1rem 0rem;
 }
 
+body {
+    background-image: radial-gradient(circle, #262c87, #000338);
+}
+
 a {
-    color: #00ab6b;
+    color: #EE3D68;
     transition: all 0.2s;
+	background-image: linear-gradient(to right, #F23568, #F2955E);
+	background-clip: text;
+	color: transparent;
 }
 
 a:hover {
-    color: #038252;
+    color: #BF9B6F;
     text-decoration: none;
 }
 
@@ -39,7 +49,7 @@ pre {
 }
 
 .mediumnavigation {
-    background: rgba(255, 255, 255, .97);
+    background: #0f1577;
     box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .15);
     transition: top 0.2s ease-in-out;
 }
@@ -53,6 +63,8 @@ pre {
     padding-top: 1.5rem;
     margin-top: 57px;
     transition: all 0.4s;
+	background-image: radial-gradient(circle, #262c87, #000338);
+	color: rgba(255, 255, 255, .9);
 }
 
 section {
@@ -72,7 +84,9 @@ section.recent-posts {
 }
 
 .section-title span {
-    border-bottom: 1px solid rgba(0, 0, 0, .44);
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-image: linear-gradient(to right, #F23568, #F2955E) 1;
     display: inline-block;
     padding-bottom: 20px;
     margin-bottom: -1px;
@@ -87,6 +101,10 @@ section.recent-posts {
 .article-post ul ul {
     list-style: disc;
     margin-bottom: 0rem;
+}
+
+.card {
+    background-image:  radial-gradient(farthest-corner at 100% 100%, #9da9ff, #50bff4);
 }
 
 @media (min-width:576px) {
@@ -228,7 +246,7 @@ span.author-meta {
 
 span.post-date,
 span.post-read {
-    color: rgba(0, 0, 0, .44);
+    color: rgba(255, 255, 255, .44);
 }
 
 span.post-read-more {
@@ -257,6 +275,7 @@ span.post-read-more a:hover {
     font-size: 0.8rem;
     border-radius: 30px;
     overflow: hidden;
+	background-image: linear-gradient(to right, #F23568, #F2955E);
     border: 1px solid rgba(0, 0, 0, 0.09);
     min-width: 180px;
 }
@@ -318,11 +337,11 @@ span.post-read-more a:hover {
     padding-top: 15px;
     padding-bottom: 12px;
     font-size: 0.8rem;
-    color: rgba(0, 0, 0, .44);
+    color: rgba(255, 255, 255, .44);
     margin-top: 50px;
     margin-bottom: 62px;
     position: relative;
-    background: #fff;
+    background: #100D26;
 }
 
 .link-dark {
@@ -333,14 +352,16 @@ span.post-read-more a:hover {
     font-family: Merriweather;
     font-size: 1.1rem;
     line-height: 1.84;
-    color: rgba(0, 0, 0, .8);
+    color: rgba(255, 255, 255, .8);
 }
 
 blockquote {
-    border-left: 4px solid #00ab6b;
+    border-width: 0 0 0 4px;
+    border-style: solid;
+    border-image: linear-gradient(to bottom, #F23568, #F2955E) 1;
     padding: 0 20px;
     font-style: italic;
-    color: rgba(0, 0, 0, .5);
+    color: rgba(255, 255, 255, .5);
 }
 
 .article-post p,
@@ -474,8 +495,8 @@ blockquote {
 
 .share,
 .share a {
-    color: rgba(0, 0, 0, .44);
-    fill: rgba(0, 0, 0, .44);
+    color: rgba(255, 255, 255, .44);
+    fill: rgba(255, 255, 255, .44);
 }
 
 .graybg {
@@ -501,14 +522,14 @@ ul.tags li {
 }
 
 ul.tags li a {
-    background: rgba(0, 0, 0, .05);
-    color: rgba(0, 0, 0, .6);
+    background: rgba(255, 255, 255, .05);
+    color: rgba(255, 255, 255, .6);
     border-radius: 3px;
     padding: 5px 10px;
 }
 
 ul.tags li a:hover {
-    background: rgba(0, 0, 0, .07);
+    background: rgba(255, 255, 255, .07);
     text-decoration: none;
 }
 
@@ -898,4 +919,30 @@ iframe {
 .lazyimg[data-srcset] {
     opacity: 0;
     transition: opacity .25s;
+}
+
+.c-rating button {
+    background-color: #CDD7FF;
+}
+
+.navbar-dark .navbar-nav .active > .nav-link {
+    font-weight: bold;
+	background-image: linear-gradient(to right, #F23568, #F2955E);
+	background-clip: text;
+	color: transparent;
+}
+
+.navbar .logo {
+    font-family: Righteous;
+    font-weight: bold;
+	background-image: linear-gradient(to right, #F23568, #F2955E);
+	background-clip: text;
+	color: transparent;
+}
+
+#lunrsearch {
+    color: #ffffff;
+}
+#lunrsearch::placeholder {
+    color: #ffffff99;
 }
