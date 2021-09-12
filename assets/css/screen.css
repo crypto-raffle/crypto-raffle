@@ -6,7 +6,7 @@ License: https://www.wowthemes.net/freebies-license/
 @media screen and (min-width:1500px) {
     html { 
 		font-size: 18px; 
-		background: #020873; 
+		background-image: radial-gradient(circle, #262c87, #000338);
 	} /* Increase the font size on higher resolutions */
     .container {max-width:80%;}
 }
@@ -15,7 +15,7 @@ License: https://www.wowthemes.net/freebies-license/
 }
 
 body {
-    background: #020873; 
+    background-image: radial-gradient(circle, #262c87, #000338);
 }
 
 a {
@@ -49,7 +49,7 @@ pre {
 }
 
 .mediumnavigation {
-    background: #020F59;
+    background: #0f1577;
     box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .15);
     transition: top 0.2s ease-in-out;
 }
@@ -63,7 +63,7 @@ pre {
     padding-top: 1.5rem;
     margin-top: 57px;
     transition: all 0.4s;
-	background: #020873;
+	background-image: radial-gradient(circle, #262c87, #000338);
 	color: rgba(255, 255, 255, .9);
 }
 
@@ -104,7 +104,7 @@ section.recent-posts {
 }
 
 .card {
-    background-color: #CDD7FF;
+    background-image:  radial-gradient(farthest-corner at 100% 100%, #9da9ff, #50bff4);
 }
 
 @media (min-width:576px) {
@@ -356,10 +356,12 @@ span.post-read-more a:hover {
 }
 
 blockquote {
-    border-left: 4px solid #00ab6b;
+    border-width: 0 0 0 4px;
+    border-style: solid;
+    border-image: linear-gradient(to bottom, #F23568, #F2955E) 1;
     padding: 0 20px;
     font-style: italic;
-    color: rgba(0, 0, 0, .5);
+    color: rgba(255, 255, 255, .5);
 }
 
 .article-post p,
@@ -928,4 +930,19 @@ iframe {
 	background-image: linear-gradient(to right, #F23568, #F2955E);
 	background-clip: text;
 	color: transparent;
+}
+
+.navbar .logo {
+    font-family: Righteous;
+    font-weight: bold;
+	background-image: linear-gradient(to right, #F23568, #F2955E);
+	background-clip: text;
+	color: transparent;
+}
+
+#lunrsearch {
+    color: #ffffff;
+}
+#lunrsearch::placeholder {
+    color: #ffffff99;
 }
